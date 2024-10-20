@@ -2,6 +2,13 @@ body {
     font-family: 'Courier New', monospace;
 }
 
+/* Cursor no select (bukan cursor I beam) */
+
+.no-select {
+    user-select: none; 
+    cursor: default;
+}
+
 /* Main Body */
 
 .bg-image {
@@ -52,19 +59,16 @@ body {
     align-items: center;
     color: white; /* Adjust text color for visibility */
     text-align: center;
+    animation: fontSwitch 0.3s ease-in-out 1; /* Apply animation to the container */
 }
 
-.myheader h1,
-.myheader p {
+.myheader h1:hover,
+.myheader p:hover {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.myheader p:hover,
-.myheader h1:hover {
-    animation: fontSwitch 0.3s ease-in-out 1; /* Apply animation when hovering over p or h1 */
+    animation: fontSwitch 0.4s ease-in-out 1; /* Apply animation directly to h1 and p */
 }
 
 @keyframes fontSwitch {
@@ -72,21 +76,41 @@ body {
         font-family: 'Times New Roman', serif;
         color: white; /* Starting color */
     }
-    20% { 
+    10% { 
         font-family: 'Impact', sans-serif;
         color: green; /* Change to green */
     }
-    40% { 
+    20% { 
         font-family: 'Arial', sans-serif;
         color: purple; /* Change to purple */
     }
-    60% { 
+    30% { 
+        font-family: 'Courier New', monospace;
+        color: blue; /* Change to blue */
+    }
+    40% { 
         font-family: 'Lucida Console', monospace;
         color: yellow; /* Change to yellow */
+    }
+    50% { 
+        font-family: 'Verdana', sans-serif;
+        color: red; /* Change to red */
+    }
+    60% { 
+        font-family: 'Georgia', serif;
+        color: cyan; /* Change to cyan */
+    }
+    70% { 
+        font-family: 'Comic Sans MS', cursive;
+        color: magenta; /* Change to magenta */
     }
     80% { 
         font-family: 'Times New Roman', serif;
         color: orange; /* Change to orange */
+    }
+    90% { 
+        font-family: 'Trebuchet MS', sans-serif;
+        color: lime; /* Change to lime */
     }
     100% { 
         font-family: 'Baskerville', serif;

@@ -18,19 +18,19 @@
         <!-- Text vynn0.dev & subtitle -->
         <div class="myheader container d-flex flex-column justify-content-center align-items-center p-5 my-5 mx-auto"
             style="min-height: 50vh;">
-            <h1>vynn0.dev</h1>
-            <p>Welcome to my page.</p>
+            <h1 class="no-select">vynn0.dev</h1>
+            <p class="no-select">Welcome to my page.</p>
         </div>
 
 <!-- Second container -->
     <div class="contents container-fluid text-white d-flex flex-column shadow-transition">
-        <h1 class="text-center my-5 text-light">Where do you want to go?</h1>
+        <h1 class="text-center my-5 text-light no-select">Where do you want to go?</h1>
         <div class="row justify-content-center mb-5">
             
             <!-- First Card -->
             <div class="col-md-4 d-flex justify-content-center mb-2">
                 <div class="card" style="width: 18rem;">
-                    <a href="#" class="card-body text-decoration-none">
+                    <a href="project.php" class="card-body text-decoration-none">
                         <h5 class="card-title">Projects</h5>
                         <p class="card-text">Want a quick preview over my projects? Click me!</p>
                     </a>
@@ -40,7 +40,7 @@
             <!-- Second Card -->
             <div class="col-md-4 d-flex justify-content-center mb-2">
                 <div class="card" style="width: 18rem;">
-                    <a href="#" class="card-body text-decoration-none">
+                    <a href="blog.php" class="card-body text-decoration-none">
                         <h5 class="card-title">Blog</h5>
                         <p class="card-text">Want to see my blog? Click me instead!</p>
                     </a>
@@ -50,7 +50,7 @@
             <!-- Second Card -->
             <div class="col-md-4 d-flex justify-content-center mb-2">
                 <div class="card" style="width: 18rem;">
-                    <a href="#" class="card-body text-decoration-none">
+                    <a href="contact.php" class="card-body text-decoration-none">
                         <h5 class="card-title">Contact</h5>
                         <p class="card-text">Hm, something more serious? Click here instead so I could contact you</p>
                     </a>
