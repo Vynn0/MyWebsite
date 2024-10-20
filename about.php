@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
     <title>About</title>
 </head>
 
 <body>
+    <div class="bg-image"></div>
     <?php include 'Template/header.php'; ?>
     <div class="container mt-4">
         <h1><u>About Us:</u></h1>

@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Kontak</title>
 </head>
 
 <body>
     <form action="confirmation.php" method="POST">
+    <div class="bg-image"></div>
     <?php include 'Template/header.php'; ?>
-        <div class="container d-flex flex-column justify-content-center align-items-left p-5 my-5 mx-auto border">
+        <div class="container contacts-container d-flex flex-column justify-content-center align-items-left p-5 my-5 mx-auto border">
             <h1>Formulir Kontak:</h1>
             <div class="mb-3 mt-3">
                 <div class="row">

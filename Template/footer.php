@@ -1,4 +1,4 @@
-<footer class="footer text-light pt-3"> <!-- Apply your custom 'footer' class -->
+<footer class="footer text-light pt-3 shadow-transition"> <!-- Apply your custom 'footer' class -->
     <div class="container">
         <p>&copy; 2024 vynn0.dev. All rights reserved.</p> <!-- Text is centered with the new 'text-align' rule -->
     </div>

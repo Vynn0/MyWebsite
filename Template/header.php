@@ -11,14 +11,14 @@
 <header>
 <nav class="navbar navbar-expand-sm bg-transparent navbar-dark py-3">
     <div class="container-fluid">
-        <!-- Left-aligned image -->
+
         <div class="navbar-brand">
             <img src="assets/v-trsp.png" style="max-height: 60px;" class="rounded" alt="Logo">
         </div>
-        <!-- Centered nav items -->
+
         <ul class="navbar-nav mx-auto">
             <li class="nav-item me-3"><a class="nav-link text-light" href="dashboard.php">Home</a></li>
-            <li class="nav-item me-3"><a class="nav-link text-light" href="projectsmain.php">Projects</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="project.php">Projects</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="contact.php">Contact</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="blog.php">Blog</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="about.php">About</a></li>

@@ -1,3 +1,9 @@
+body {
+    font-family: 'Courier New', monospace;
+}
+
+/* Main Body */
+
 .bg-image {
     /* The image used */
     background-image: url('../Assets/background.jpg');
@@ -23,19 +29,21 @@
     /* Ensure it stays behind other content */
     z-index: -1;
 }
-  
-/* Normal state for the nav-link */
+
+/* Navbar */
+
 .nav-item .nav-link {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover state to change color, scale, and start the font animation */
 .nav-item .nav-link:hover {
     color: #ff9800; 
     transform: scale(1.1); 
     background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 5px; 
 }
+
+/* Dashboard - Header */
 
 .myheader {
     height: 90vh; /* Full viewport height */
@@ -61,7 +69,7 @@
 
 @keyframes fontSwitch {
     0% { 
-        font-family: 'Arial', sans-serif;
+        font-family: 'Times New Roman', serif;
         color: white; /* Starting color */
     }
     20% { 
@@ -69,7 +77,7 @@
         color: green; /* Change to green */
     }
     40% { 
-        font-family: 'Courier New', monospace;
+        font-family: 'Arial', sans-serif;
         color: purple; /* Change to purple */
     }
     60% { 
@@ -85,6 +93,9 @@
         color: white; /* Return to white */
     }
 }
+
+/* Footer */
+
 .footer {
     background-color: #000000; /* Ensures the footer background is black */
     padding: 20px; /* Adds padding */
@@ -98,6 +109,30 @@ footer p {
     color: #ffffff; /* Makes sure the text is visible on the dark background */
 }
 
+/* Cards */
+
+.card {
+    box-shadow: 0px 0px 4px rgba(255, 185, 246, 0.7);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Add box-shadow to the transition */
+}
+
+.card:hover {
+    box-shadow: 0px 0px 16px rgba(255, 185, 246, 0.7); /* Increase the shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Others */
+
 .shadow-transition {
     box-shadow: 0px 16px 32px rgba(213, 201, 255, 0.7);
+}
+
+.contacts-container {   
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.7);
+}
+
+.contents {
+    background-color: rgba(23, 23, 39, 0.95); 
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.7);
 }
