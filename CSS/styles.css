@@ -56,7 +56,7 @@
 
 .myheader p:hover,
 .myheader h1:hover {
-    animation: fontSwitch 0.4s ease-in-out 1; /* Apply animation when hovering over p or h1 */
+    animation: fontSwitch 0.3s ease-in-out 1; /* Apply animation when hovering over p or h1 */
 }
 
 @keyframes fontSwitch {
@@ -91,9 +91,13 @@
     border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
-footer h4 {
+footer p {
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: bold;
     text-align: center; /* Center the text */
     color: #ffffff; /* Makes sure the text is visible on the dark background */
+}
+
+.shadow-transition {
+    box-shadow: 0px 16px 32px rgba(213, 201, 255, 0.7);
 }

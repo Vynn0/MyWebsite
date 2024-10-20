@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 
 <body> 
+    <div class="bg-image"></div>
     <?php include 'Template/header.php'; ?>
     <section>
         <div class="container my-5">
-            <h2 class="text-center mb-4">My Projects</h2>
+            <h2 class="text-center mb-4 text-light">My Projects</h2>
             <div class="row">
                 <!-- Project 1 -->
                 <div class="col-12 mb-4">
