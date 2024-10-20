@@ -1,0 +1,99 @@
+.bg-image {
+    /* The image used */
+    background-image: url('../Assets/background.jpg');
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to blend */
+
+    /* Add the blur effect */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+    /* Full height and position */
+    position: fixed; /* Make sure the background stays fixed */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width for better scaling */
+    height: 100vh; /* Use viewport height for full coverage */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+
+    /* Ensure it stays behind other content */
+    z-index: -1;
+}
+  
+/* Normal state for the nav-link */
+.nav-item .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover state to change color, scale, and start the font animation */
+.nav-item .nav-link:hover {
+    color: #ff9800; 
+    transform: scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+}
+
+.myheader {
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Adjust text color for visibility */
+    text-align: center;
+}
+
+.myheader h1,
+.myheader p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.myheader p:hover,
+.myheader h1:hover {
+    animation: fontSwitch 0.4s ease-in-out 1; /* Apply animation when hovering over p or h1 */
+}
+
+@keyframes fontSwitch {
+    0% { 
+        font-family: 'Arial', sans-serif;
+        color: white; /* Starting color */
+    }
+    20% { 
+        font-family: 'Impact', sans-serif;
+        color: green; /* Change to green */
+    }
+    40% { 
+        font-family: 'Courier New', monospace;
+        color: purple; /* Change to purple */
+    }
+    60% { 
+        font-family: 'Lucida Console', monospace;
+        color: yellow; /* Change to yellow */
+    }
+    80% { 
+        font-family: 'Times New Roman', serif;
+        color: orange; /* Change to orange */
+    }
+    100% { 
+        font-family: 'Baskerville', serif;
+        color: white; /* Return to white */
+    }
+}
+.footer {
+    background-color: #000000; /* Ensures the footer background is black */
+    padding: 20px; /* Adds padding */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+footer h4 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    color: #ffffff; /* Makes sure the text is visible on the dark background */
+}

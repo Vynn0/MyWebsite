@@ -1,20 +1,6 @@
-<footer class="bg-dark text-light pt-3">
+<footer class="footer text-light pt-3"> <!-- Apply your custom 'footer' class -->
     <div class="container">
-        <h3 class="text-start mb-4">Link Rekomendasi</h3>
-        <ul class="list-unstyled text-left">
-            <li class="mb-3">
-                <a href="https://www.google.com" class="text-light">Google</a>
-            </li>
-            <li class="mb-3">
-                <a href="https://upj.ac.id/" class="text-light">UPJ</a>
-            </li>
-            <li class="mb-3">
-                <a href="https://wikipedia.org/" class="text-light">Wikipedia</a>
-            </li>
-            <li class="mb-3">
-                <a href="https://www.fandom.com/" class="text-light">Wiki Fandom</a>
-            </li>
-        </ul>
+        <h4>&copy; 2024 vynn0.dev. All rights reserved.</h3> <!-- Text is centered with the new 'text-align' rule -->
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
