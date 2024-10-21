@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="CSS/styles.css" rel="stylesheet">
     <title>Dashboard</title>
@@ -12,15 +11,31 @@
 
 <body>
     <div class="bg-image"></div>
+    <?php
+    session_start();
+    
+    if (!isset($_SESSION['admin'])) {
+        header("Location: login.php"); // Redirect to login if not logged in
+        exit();
+    }
+    
+    $username = $_SESSION['admin'];
+    ?>
+    
     <?php include 'Template/header.php'; ?>
     <section>
 
-        <!-- Text vynn0.dev & subtitle -->
+<!-- First Container - Text vynn0.dev & subtitle -->
         <div class="myheader container d-flex flex-column justify-content-center align-items-center p-5 my-5 mx-auto"
             style="min-height: 50vh;">
             <h1 class="no-select">vynn0.dev</h1>
             <p class="no-select">Welcome to my page.</p>
         </div>
+    
+<!-- Logged in notice -->
+        <div class="container text-center mt-5">
+        <p class="text-light">Logged in as <?php echo htmlspecialchars($username); ?>.</p>
+    </div>
 
 <!-- Second container -->
     <div class="contents container-fluid text-white d-flex flex-column shadow-transition">
@@ -44,10 +59,10 @@
                         <h5 class="card-title">Blog</h5>
                         <p class="card-text">Want to see my blog? Click me instead!</p>
                     </a>
-                </div>
+                </div>  
             </div>
 
-            <!-- Second Card -->
+            <!-- Third Card -->
             <div class="col-md-4 d-flex justify-content-center mb-2">
                 <div class="card" style="width: 18rem;">
                     <a href="contact.php" class="card-body text-decoration-none">

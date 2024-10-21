@@ -23,6 +23,10 @@
             <li class="nav-item me-3"><a class="nav-link text-light" href="blog.php">Blog</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="about.php">About</a></li>
         </ul>
+
+        <ul class="navbar-nav mx-3">
+            <li class="nav-item me-3"><a class="nav-link text-light" href="login.php">Login</a></li>
+        </ul>
     </div>
 </nav>
 </header>
