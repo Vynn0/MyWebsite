@@ -17,15 +17,11 @@
         </div>
 
         <ul class="navbar-nav mx-auto">
-            <li class="nav-item me-3"><a class="nav-link text-light" href="dashboard.php">Home</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="/MyWebsite/dashboard.php">Home</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="project.php">Projects</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="contact.php">Contact</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="blog.php">Blog</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="about.php">About</a></li>
-        </ul>
-
-        <ul class="navbar-nav mx-3">
-            <li class="nav-item me-3"><a class="nav-link text-light" href="login.php">Login</a></li>
         </ul>
     </div>
 </nav>

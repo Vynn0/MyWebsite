@@ -12,14 +12,15 @@
 <body>
     <div class="bg-image"></div>
     <?php
+    include 'Database/connection.php'; 
+
+    // Count users
+    $query = "SELECT COUNT(*) as user_count FROM admin";
+    $result = mysqli_query($connection, $query);
+    $row = mysqli_fetch_assoc($result);
+    $user_count = $row['user_count'];
+
     session_start();
-    
-    if (!isset($_SESSION['admin'])) {
-        header("Location: login.php"); // Redirect to login if not logged in
-        exit();
-    }
-    
-    $username = $_SESSION['admin'];
     ?>
     
     <?php include 'Template/header.php'; ?>
@@ -31,11 +32,6 @@
             <h1 class="no-select">vynn0.dev</h1>
             <p class="no-select">Welcome to my page.</p>
         </div>
-    
-<!-- Logged in notice -->
-        <div class="container text-center mt-5">
-        <p class="text-light">Logged in as <?php echo htmlspecialchars($username); ?>.</p>
-    </div>
 
 <!-- Second container -->
     <div class="contents container-fluid text-white d-flex flex-column shadow-transition">
@@ -70,6 +66,11 @@
                         <p class="card-text">Hm, something more serious? Click here instead so I could contact you</p>
                     </a>
                 </div>
+            </div>
+
+            <!-- User Counter Section -->
+            <div class="container text-center mt-5">
+                <p class="text-light">Total Users: <?php echo $user_count; ?></p>
             </div>
 
         </div>

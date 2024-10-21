@@ -14,7 +14,7 @@
     <?php include 'Template/header.php'; ?>
     <section>
         <div class="container my-5">
-            <h2 class="text-center mb-4">My Blog</h2>
+            <h2 class="text-center text-light mb-4">My Blog</h2>
             <div class="row">
                 <!-- Project 1 -->
                 <div class="col-12 mb-4">
