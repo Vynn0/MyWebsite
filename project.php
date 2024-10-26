@@ -15,32 +15,31 @@
     <section>
         <div class="container my-5">
             <h2 class="text-center mb-5 text-light">My Projects</h2>
+            <?php 
+            include 'Database/connection.php';
 
-            <!-- First Card - Boostrap 5 -->
-            <div class="d-flex justify-content-center align-items-center mb-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Assets/Mittlemazigste.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Fantasy Map Project</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="Projects/project1.php" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Second Card - Boostrap 5 -->
-            <div class="d-flex justify-content-center align-items-center mb-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Assets/Mittlemazigste-Culture.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Fantasy Map Project - Subcultures</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            $query = "SELECT id, title, summary, image_path FROM article";
+            $result = mysqli_query($connection, $query);
 
-        </div>
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<div class="d-flex justify-content-center align-items-center mb-5">';
+                    echo '    <div class="card" style="width: 18rem;">';
+                    echo '        <img class="card-img-top" src="' . htmlspecialchars($row['image_path']) . '" alt="Card image cap">';
+                    echo '        <div class="card-body">';
+                    echo '            <h5 class="card-title">' . htmlspecialchars($row['title']) . '</h5>';
+                    echo '            <p class="card-text">' . htmlspecialchars($row['summary']) . '</p>';
+                    echo '            <a href="article-content.php?id=' . $row['id'] . '" class="btn btn-primary">Read More</a>';
+                    echo '        </div>';
+                    echo '    </div>';
+                    echo '</div>';
+                }
+            } else {
+                echo '<p class="text-center text-light">No projects found.</p>';
+            }
+            mysqli_free_result($result);
+            mysqli_close($connection);
+            ?>
     </section>
     <?php include 'Template/footer.php'; ?>
 </body>

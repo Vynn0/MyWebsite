@@ -11,18 +11,6 @@
 
 <body>
     <div class="bg-image"></div>
-    <?php
-    include 'Database/connection.php'; 
-
-    // Count users
-    $query = "SELECT COUNT(*) as user_count FROM admin";
-    $result = mysqli_query($connection, $query);
-    $row = mysqli_fetch_assoc($result);
-    $user_count = $row['user_count'];
-
-    session_start();
-    ?>
-    
     <?php include 'Template/header.php'; ?>
     <section>
 
@@ -67,12 +55,6 @@
                     </a>
                 </div>
             </div>
-
-            <!-- User Counter Section -->
-            <div class="container text-center mt-5">
-                <p class="text-light">Total Users: <?php echo $user_count; ?></p>
-            </div>
-
         </div>
     </div>
 
