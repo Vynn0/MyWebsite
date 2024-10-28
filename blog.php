@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="CSS/styles.css" rel="stylesheet"> -->
     <title>Dashboard</title>
     <style>
-        /* Custom styles for blog images */
         .card-img-top {
-            width: 100%;          /* Make the image fill the card's width */
-            height: 500px;       /* Set a fixed height for the image */
-            object-fit: cover;    /* Maintain aspect ratio and cover the area */
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
         }
     </style>
 </head>

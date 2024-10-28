@@ -13,7 +13,7 @@
     <div class="container-fluid">
 
         <div class="navbar-brand">
-            <img src="/Assets/V-trsp.png" style="max-height: 60px;" class="rounded" alt="Logo">
+            <img src="Assets/V-trsp.png" style="max-height: 60px;" class="rounded" alt="Logo">
         </div>
 
         <ul class="navbar-nav mx-auto">
