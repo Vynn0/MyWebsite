@@ -13,13 +13,12 @@
     <div class="container-fluid">
 
         <div class="navbar-brand">
-            <img src="assets/v-trsp.png" style="max-height: 60px;" class="rounded" alt="Logo">
+            <img src="/Assets/V-trsp.png" style="max-height: 60px;" class="rounded" alt="Logo">
         </div>
 
         <ul class="navbar-nav mx-auto">
-            <li class="nav-item me-3"><a class="nav-link text-light" href="/MyWebsite/dashboard.php">Home</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="dashboard.php">Home</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="project.php">Projects</a></li>
-            <!-- <li class="nav-item me-3"><a class="nav-link text-light" href="contact.php">Contact</a></li> -->
             <li class="nav-item me-3"><a class="nav-link text-light" href="blog.php">Blog</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="about.php">About</a></li>
         </ul>

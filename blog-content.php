@@ -34,7 +34,7 @@
     ?>
 
     <div class="bg-image"></div>
-    <?php include 'Template/projectheader.php'; ?>
+    <?php include 'Template/blogheader.php'; ?>
     <div class="cardcontainer container my-5">
         <h1 class="text-center text-light my-4 pt-4"><?php echo htmlspecialchars($row['title']); ?></h1>
         <?php if (!empty($row['image_path'])): ?>
