@@ -11,13 +11,26 @@
 
 <body>
     <div class="bg-image"></div>
-    <?php include 'Template/header.php'; ?>
+    <?php 
+        include 'Template/header.php'; 
+        include 'Database/connection.php'; // Include your connection file
+
+        // Fetch title from the database
+        $title = "Default Title"; // Default title if the database fetch fails
+        $query = "SELECT title FROM dashboard LIMIT 1";
+        $result = mysqli_query($connection, $query);
+        
+        if ($result && $result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $title = $row['title'];
+        }
+    ?>
     <section>
 
-<!-- First Container - Text vynn0.dev & subtitle -->
+        <!-- First Container - Text vynn0.dev & subtitle -->
         <div class="myheader container d-flex flex-column justify-content-center align-items-center p-5 my-5 mx-auto"
             style="min-height: 50vh;">
-            <h1 class="no-select">vynn0.dev</h1>
+            <h1 class="no-select"><?php echo htmlspecialchars($title); ?></h1>
             <p class="no-select">Welcome to my page.</p>
         </div>
 
