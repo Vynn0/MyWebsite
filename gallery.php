@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Blog</title>
+    <title>Gallery</title>
     <style>
         .card-img-top {
             width: 100%;
@@ -20,12 +20,12 @@
     <?php include 'Template/header.php'; ?>
     <section>
         <div class="container my-5">
-            <h2 class="text-center text-light mb-4">My Blog</h2>
+            <h2 class="text-center text-light mb-4">Gallery of Cool Images</h2>
             
             <?php 
             include 'Database/connection.php';
 
-            $query = "SELECT id, title, summary, image_path FROM blog";
+            $query = "SELECT id, name, image_path FROM gallery";
             $result = mysqli_query($connection, $query);
 
             if (mysqli_num_rows($result) > 0) {
@@ -36,11 +36,9 @@
 
                     echo '<div class="col-md-6 mb-4">';
                     echo '    <div class="card h-100">';
-                    echo '        <img src="' . htmlspecialchars($imagePath) . '" class="card-img-top" alt="' . htmlspecialchars($row['title']) . '">';
+                    echo '        <img src="' . htmlspecialchars($imagePath) . '" class="card-img-top" alt="' . htmlspecialchars($row['name']) . '">';
                     echo '        <div class="card-body">';
-                    echo '            <h5 class="card-title">' . htmlspecialchars($row['title']) . '</h5>';
-                    echo '            <p class="card-text">' . htmlspecialchars($row['summary']) . '</p>';
-                    echo '            <a href="blog-content.php?id=' . $row['id'] . '" class="btn btn-primary">Read More</a>';
+                    echo '            <h5 class="card-title">' . htmlspecialchars($row['name']) . '</h5>';
                     echo '        </div>';
                     echo '    </div>';
                     echo '</div>';

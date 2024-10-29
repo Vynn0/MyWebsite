@@ -20,6 +20,7 @@
             <li class="nav-item me-3"><a class="nav-link text-light" href="dashboard.php">Home</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="project.php">Projects</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="blog.php">Blog</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="gallery.php">Gallery</a></li>
             <li class="nav-item me-3"><a class="nav-link text-light" href="about.php">About</a></li>
         </ul>
     </div>
